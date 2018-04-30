@@ -56,29 +56,32 @@
 
         <h3 id="markdown">Introduction</h3>
 
-        <p>This project aims to visualise a certain dataset published by National Crime Records Bureau(NCRB) on either Crime, Suicides or Prison Statistics.
-          I chose to work on a dataset about the Suicides in India by state and cause. I made a hypothesis to start of with and then I used the Tableau public tool to visualise the data and analyse it further to verify my hypothesis.</p>
+        <p>The aim of the final project in this course was to identify a social issue and attempt to create something that would go some way towards improving the situation either by finding a solution or by raising awareness regarding this cause in some form or the other. As a group we decided to pick a field in which our project could make some sort of difference considering the time constraints (The course is only three months long). Our second criteria was to pick a project which would reflect our strengths, as this would allow us to create something which had the potential for the greatest impact. All 3 of us have a background in Computer Science and felt that we could use these skills and attempt to create a useful web application which could solve any of the array of social issues around us. We brainstormed ideas and finally managed to narrow down to the field of women’s safety, which we feel is easily one of the most pertinent issues in our country today. It seemed to be the ideal opportunity for us to gain some in depth knowledge regarding the issues faced by women on a daily basis and to try our level best to help them in any manner we could.</p>
 
-        <h3>About the Dataset</h3>
+        <h3>Interviews</h3>
 
-        <p>The chosen dataset is obtained from Data World and it is called "Suicides in India". This was because of the inavailability to download from the NCRB website which is under maintenance. This provides data of suicides reported from 29 states, 7 UTs, ranging from 2001 - 2014 based on type, gender and age group of the concerned. I used the Tableau Public tool to clean the dataset and keep only the required data.</p>
+        <p>TOur next step was to contact NGOs who actively worked in the field of women’s issues, including their safety. We got in touch with 2 NGO’s - Swati and Jagori - to get an idea of what the challenges in the field were and received advice as to how we should set about our task. They told us about the severe lack of information regarding safety levels of different areas and explained how this left women feeling vulnerable especially while travelling on their own to unfamiliar areas. These interviews gave us an insight into the unique challenges in the field as well as what was lacking in terms of the current solutions. They gave us a foundation upon which we could build begin to build an app that could answer these problems.
+
+After this round of interviews, we did some research to find whether there were any companies who had succeeded in implementing anything along similar lines. We came across a company called Safetipin which is a highly successful women’s safety app and decided to get in touch with them. After multiple attempts, we were able to get hold of a senior representative of Safetipin to understand how they approached the challenges in the field. They explained to us how they undertook extensive amounts of qualitative research to come up with a list of metrics, a weighted average of which would give a safety score. These metrics include factors such as visibility, crowdedness, lighting etc. We told them about our project and they were enthusiastic to help us and happy that students were showing interest in their work. They decided to help us out by providing us with access to their Delhi area-wise data of different metrics and requested us to present our project to them once it was complete.
+</p>
 
         <h3>HYPOTHESIS: Is there a relationship between suicides committed with respect to the person’s gender, geographical location and their respective socio-economic factors?</h2>
 
-        <h4 id = "one">Analysis #1: General visualisation of the whole dataset.<a href="#main_content_wrap"> UP</a></h4>
+        <h4 id = "one">Surveys<a href="#main_content_wrap"> UP</a></h4>
 
-        <p>Given the hypothesis we can use the visualisation provided to view the general varying trends in suicide number with respect to male and female. This was done to look into each cause by selecting them from the list on the right side, and trying to see any abnormalities in the data which could be used for further study.
-          For example, if we click on "Family Problems" from the list we can see which states have higher number of suicides corresponding to it. We see that interestingly, the number of men in kerala committing suicide for this reason is much higher women in the same area. This is different from the other states and could be looked at deeper for some insights.
-          This visualisation also gives us a bigger picture on the total number of suicides from each state. We can already see from these examples that there could be a relationship between gender and geographical location. </p>
-
-
-        <h4 id = "two">Analysis #2: Relationship between literacy rate, suicide rate and cause of suicide. <a href="#main_content_wrap">UP</a></h4>
-        <p>The literacy rates in India have seen a general upward trend from 2001 to 2011 according to the census. It has been reported that as of 2011, Kerala has the highest literacy rate at 93.91% and Tripura at 87.75% (Tripura is currently highest as of 2015). The interesting thing to note is that the decadal difference from 2001 for both is 3.05% and 14.56% respectively.
-          In this view, I visualised the change in possbible causes for suicide that could be related to the change in literacy rate between 2001 and 2011. Of the different causes in the graph, we can see a clear decline in the number of suicides due to no education in both Kerala and Tripura. If not a direct link, there also seems to be a link between literacy rate and suicides caused by over alcoholism.
-          From this, we can further verify my hypothesis as there is a relationship between socio-economic factors(literacy rate) and related causes for suicide.</p>
+        <p>To meaningfully use the raw data they had provided us with, we had to arrive at an algorithm which would give us the safety score consisting of a weighted average of all the metrics. For the purpose of beginning work on our app, we decided to run a small informal survey with the women at Ashoka, discussing the importance of the different metrics in the list. As the project progressed however, we sent out a larger formal survey and received over 80 responses. These responses were then compiled, processed and the metrics were given a weightage rank between 1-5 in order of importance. This weightage rank was then applied to our algorithm and we managed to extract area wise safety scores from the raw data.
+</p>
 
 
-        <h4 id = "three">Analysis #3: Relationship beween drug abuse, geographical location and age group. <a href="#main_content_wrap">UP</a></h4>
+        <h4 id = "two">Our Application<a href="#main_content_wrap">UP</a></h4>
+        <p>Once we had raw data and managed to process it to extract safety scores, we were able to begin proper work on our application. For the purpose of this course we decided to make a web application which would include 2 primary features:
+          <ul>
+            <li>A Data Visualisation of a map of Delhi which contains an area wise breakdown of safety scores as well as scores of each area according to particular metrics. </li>
+            <li>An SOS feature</li>
+        </p>
+
+
+        <h4 id = "three">Conclusion & Future Prospects<a href="#main_content_wrap">UP</a></h4>
         <p>From the first visualisation, if we click on "drug abuse" from the menu, we can notice a distinct jump in the number of suicides in Maharashtra as compared to the other states.
           To understand this trend I tried to visualise the suicides due to drug abuse in the top 5 states for every age group. To keep the data integrity intact, we can not directly look at the numbers as the population and size of each state is no factored in. Further, to understand this better,
           you can click on each state from the list and visualise them separately. I made the following analysis:
