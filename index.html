@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,maximum-scale=2">
     <link rel="stylesheet" type="text/css" media="screen" href="/SocialEnt/assets/css/style.css?v=2a06ce6cb369c4332fa784e966d1e53325390982">
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.2/mapbox-gl.css' rel='stylesheet' />
+
 
 <!-- Begin Jekyll SEO tag v2.4.0 -->
 <title>Welcome to GitHub Pages | SocialEnt</title>
@@ -80,6 +83,15 @@ After this round of interviews, we did some research to find whether there were 
             We have done multiple Visualisation:
             <ul>
               <li>Visualisation 1: Mapbox</li>
+              <div id='map' style='width: 400px; height: 300px;'></div>
+                <script>
+                  mapboxgl.accessToken = 'pk.eyJ1Ijoic2hvdXJ5YXNodWtsYSIsImEiOiJjamR5ajE2NTAwbTZpMzNqcnVndzh2dTJxIn0.AJ8EV6db3uJV93dX3lZYjQ';
+                  var map = new mapboxgl.Map({
+                    container: 'map',
+                    style: 'mapbox://styles/mapbox/streets-v9'
+                  });
+                </script>
+                <p>*Please contact owner if you cannot view the Mapbox visualisation above this.</p>
               <li><a href="https://public.tableau.com/shared/6KBXCFZQR?:display_count=yes">Visualisation 2: Tableau</a></li>
               <div class='tableauPlaceholder' id='viz1525123985339' style='position: relative'>
                 <noscript>
